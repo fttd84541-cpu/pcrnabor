@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Policie České republiky – Náborové řízení</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f4f7;
+      margin: 0;
+    }
+
+    header {
+      background: #0b2e4a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+    h3 {
+      color: #0b2e4a;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      margin-top: 25px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 12px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 14px;
+      background: #0b2e4a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #123d63;
+    }
+
+    .info {
+      font-size: 13px;
+      color: #444;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>POLICIE ČESKÉ REPUBLIKY – NÁBOROVÉ ŘÍZENÍ</h1>
+</header>
+
+<div class="container">
+
+<div class="info">
+Tento formulář slouží k výběrovému řízení k Policii České republiky v rámci RP. Uveďte pravdivé a úplné informace. Nepravdivé údaje mohou vést k vyřazení z náborového řízení.
+</div>
+
+<form action="https://formspree.io/f/mjglbqqa" method="POST">
+
+  <h3>OSOBNÍ ÚDAJE</h3>
+
+  <label>Jméno a příjmení</label>
+  <input type="text" name="jmeno" required>
+
+  <label>Datum narození</label>
+  <input type="date" name="datum_narozeni" required>
+
+  <label>Státní příslušnost</label>
+  <input type="text" name="statni_prislusnost" required>
+
+  <label>Trvalé bydliště</label>
+  <input type="text" name="bydliste" required>
+
+  <label>Rodinný stav</label>
+  <input type="text" name="rodinny_stav">
+
+  <h3>VZDĚLÁNÍ A PRAXE</h3>
+
+  <label>Nejvyšší dosažené vzdělání</label>
+  <input type="text" name="vzdelani" required>
+
+  <label>Předchozí zaměstnání a pracovní zkušenosti</label>
+  <textarea name="zamestnani"></textarea>
+
+  <label>Máte zkušenosti s bezpečnostními složkami nebo ozbrojenými sbory?</label>
+  <textarea name="bezpecnostni_zkusenosti"></textarea>
+
+  <label>Jaké další odborné znalosti nebo dovednosti můžete ve službě využít?</label>
+  <textarea name="odborne_dovednosti"></textarea>
+
+  <h3>MOTIVACE A OSOBNOST</h3>
+
+  <label>Proč se ucházíte o služební poměr u Policie České republiky?</label>
+  <textarea name="motivace" required></textarea>
+
+  <label>Co podle vás obnáší práce policisty?</label>
+  <textarea name="prace_policisty" required></textarea>
+
+  <label>Jaké vlastnosti by měl mít dobrý policista?</label>
+  <textarea name="vlastnosti_policisty" required></textarea>
+
+  <label>Jaké jsou vaše silné stránky a na čem byste se naopak potřeboval zlepšit?</label>
+  <textarea name="silne_slabse" required></textarea>
+
+  <label>Jak zvládáte stresové a psychicky náročné situace?</label>
+  <textarea name="stres"></textarea>
+
+  <label>Jak byste reagoval na oprávněnou kritiku ze strany nadřízeného?</label>
+  <textarea name="kritika"></textarea>
+
+  <h3>ODBORNÉ A SITUAČNÍ OTÁZKY</h3>
+
+  <label>Jaký by měl být váš první postup při oznámení o možném trestném činu?</label>
+  <textarea name="trestny_cin" required></textarea>
+
+  <label>Jak byste postupoval při konfliktu mezi dvěma osobami na veřejnosti?</label>
+  <textarea name="konflikt" required></textarea>
+
+  <label>Jak byste reagoval, pokud by osoba odmítala uposlechnout zákonnou výzvu policisty?</label>
+  <textarea name="vyzva" required></textarea>
+
+  <label>Jak byste postupoval při silniční kontrole vozidla, jehož řidič se chová podezřele?</label>
+  <textarea name="silnicni_kontrola"></textarea>
+
+  <label>Co byste udělal, pokud byste během služby zjistil pochybení svého kolegy?</label>
+  <textarea name="pochybeni_kolegy" required></textarea>
+
+  <label>Jaký význam má podle vás zákonnost, nestrannost a profesionalita při výkonu služby?</label>
+  <textarea name="zakonnost"></textarea>
+
+  <h3>BEZÚHONNOST</h3>
+
+  <label>Byl jste někdy trestně stíhán?</label>
+  <select name="trestni_stihani" required>
+    <option value="">Vyberte odpověď</option>
+    <option value="ne">Ne</option>
+    <option value="ano">Ano</option>
+  </select>
+
+  <label>Byl jste někdy odsouzen?</label>
+  <select name="odsouzeni" required>
+    <option value="">Vyberte odpověď</option>
+    <option value="ne">Ne</option>
+    <option value="ano">Ano</option>
+  </select>
+
+  <label>Byl jste někdy řešen pro přestupek?</label>
+  <textarea name="prestupky"></textarea>
+
+  <label>Existuje jiná skutečnost, která by mohla mít vliv na vaše přijetí?</label>
+  <textarea name="jina_skutecnost"></textarea>
+
+  <h3>OOC INFORMACE</h3>
+
+  <label>Věk (OOC)</label>
+  <input type="number" name="vek" required>
+
+  <label>Roblox jméno</label>
+  <input type="text" name="roblox_jmeno" required>
+
+  <label>Discord kontakt</label>
+  <input type="text" name="discord" required>
+
+  <label>Jak dlouho se věnujete RP?</label>
+  <input type="text" name="delka_rp">
+
+  <label>Jaké máte zkušenosti s policejními RP složkami?</label>
+  <textarea name="rp_zkusenosti"></textarea>
+
+  <label>Kolik času týdně můžete věnovat RP?</label>
+  <input type="text" name="cas_rp">
+
+  <label>Proč chcete působit právě u PČR na našem serveru?</label>
+  <textarea name="motivace_ooc"></textarea>
+
+  <h3>SOUHLAS</h3>
+
+  <label>Potvrzujete pravdivost všech uvedených údajů?</label>
+  <select name="pravdivost" required>
+    <option value="">Vyberte odpověď</option>
+    <option value="ano">Ano</option>
+    <option value="ne">Ne</option>
+  </select>
+
+  <label>Souhlasíte s pravidly Policie České republiky a serveru?</label>
+  <select name="souhlas" required>
+    <option value="">Vyberte odpověď</option>
+    <option value="ano">Ano</option>
+    <option value="ne">Ne</option>
+  </select>
+
+  <button type="submit">ODESLAT PŘIHLÁŠKU</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
